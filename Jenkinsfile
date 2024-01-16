@@ -13,7 +13,11 @@ pipeline{
                                 && git pull \\
                                 && cd dashboard \\
                                 && npm install \\
-                                && yarn build
+                                && yarn build \\
+                                && cd .. \\
+                                && cd .. \\
+                                && cd .. \\
+                                && bench migrate
                             "
                         '''
                }
