@@ -1,7 +1,7 @@
 pipeline{
    agent any
    stages{
-      stage('login server'){
+      stage('Code Update'){
          steps{
             sshagent(credentials:['134']){
                // sh 'ssh  -o StrictHostKeyChecking=no  frappe@192.168.10.134 "pwd"'
